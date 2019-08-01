@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: rgb(20, 9, 9);
+    color: white;
     /* text-shadow: 10px 10px 5px lightgrey; */
 }
 h1{
@@ -27,7 +27,7 @@ header{
     padding-top: 80px;
 }
 body{
-    background-image: linear-gradient( #cc9900, #009999,#003333);
+    background-image:url("./Images/red-and-blue.jpg");
     color: #fff;
 }
 #about, #quiz{
@@ -57,7 +57,7 @@ ul{
 
 .Question_Container{
   border-style: outset;
-  border-color: #806000;
+  border-color: #2b1661;
   width: auto;
   height: 800px;
   text-align: center;
@@ -79,7 +79,8 @@ ul{
     padding: 2em 2em;
 }
 
-.option {
+.option,
+.submit-button {
     height: 200px;
     width: 300px;
     font-size: 24px; 
@@ -89,16 +90,17 @@ ul{
 
 }
 
-.option p {
-    color:#cc9900;
+.option p, .submit-button p {
+    color: white;
 }
 
-.option:hover {
-    background-color: rgba(182, 8, 168, 0.384);    
+.option:hover, .submit-button:hover {
+    background-color: darkgray;    
 } 
- .option p:hover {
+  .option p:hover, .submit-button p:hover {
      color: black;
- }
+     transition: all 1.5s ease;
+ } 
    
 h2 {
     font-size: 36px;
