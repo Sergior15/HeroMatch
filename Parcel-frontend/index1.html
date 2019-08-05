@@ -12,36 +12,76 @@
 
 
 <body id="quiz_body">
+    <header>
+        <img src="Images/LOL-logo.JPG">
+        <h1>Character Quiz</h1>
+        <nav>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      b
+    </header>
     
    
 
+    <div class="Question_Container">
 
         <button class="Question_Head">
-                <h2>How would you describe your level of experience with video games?</h2>      
+            <h2>How would you describe your level of experience with video games?</h2>      
         </button>
         <div class="Question_Choices">        
             <button class="option">
-                <p>I have little to no experience</p></button>
-            <button class="option">
-                <p>I have some experience with video</p></button>
+                <p>I have little to no experience</p>
             </button>
             <button class="option">
-                <p>I have a lot of experience</p></button>
-            </div>
-            <div class="submit"><button class= "submit-button"><p>Submit</p></button></div>
-    
-
-    <script>
-        var coll = document.getElementsByClassName("Question_Head");
+                <p>I have some experience with video</p>
+            </button>
+            <button class="option">
+                <p>I have a lot of experience</p>
+            </button>
+        </div>
+        
+        <button class="Question_Head">
+            <h2>How would you describe your level of experience with video games???</h2>      
+        </button>
+        <div class="Question_Choices">        
+            <button class="option">
+                <p>I have little to no experience</p>
+            </button>
+            <button class="option">
+                <p>I have some experience with video</p>
+            </button>
+            <button class="option">
+                <p>I have a lot of experience</p>
+            </button>
+        </div>
+                    <!-- <div class="submit"><button class= "submit-button"><p>Submit</p></button></div> -->
+                    
+    </div>
+                    
+                    <script>
+                        var coll = document.getElementsByClassName('Question_Head');
         var i;
-
+        
         for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+            coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
         if (content.style.maxHeight) {
         content.style.maxHeight = null;
-        } else {
+    } 
+    else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+        });
+    }
+    var bttn =document.getElementsByClassName('option');
+
+    for (i = 0; i < bttn.length; i++) {
+        bttn[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        } 
+        else {
         content.style.maxHeight = content.scrollHeight + "px";
             }
         });
