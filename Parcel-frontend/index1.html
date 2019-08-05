@@ -13,21 +13,41 @@
 
 <body id="quiz_body">
     
-    <div class="Question_Container">
-        <div class="Question_Head">
+   
+
+
+        <button class="Question_Head">
                 <h2>How would you describe your level of experience with video games?</h2>      
-        </div>
+        </button>
         <div class="Question_Choices">        
             <button class="option">
-                <p>A: I have little to no experience</p></button>
+                <p>I have little to no experience</p></button>
             <button class="option">
-                <p>B: I have some experience with video </p></button>
+                <p>I have some experience with video</p></button>
             </button>
             <button class="option">
-                <p>C: Text for now</p></button>
+                <p>I have a lot of experience</p></button>
             </div>
             <div class="submit"><button class= "submit-button"><p>Submit</p></button></div>
-    </div>
+    
+
+    <script>
+        var coll = document.getElementsByClassName("Question_Head");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+    
+    </script>
     
 </body>
 </html>
