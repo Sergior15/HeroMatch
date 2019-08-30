@@ -5,35 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=<1.0>">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hero Match</title>
-    <link rel= "stylesheet" type= "text/css" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href="./style.css"> 
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Grenze&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Geo|Gugi|Josefin+Sans|Russo+One|Sail|Sirin+Stencil|Stalinist+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Hero Match</h1>
-        <span>Find Your Gaming Character</span>   
-    </header>
-</br>
-    <section id="about">
-            <h2>About</h2>
-            <p>This website helps novice gamers navigate the process of finding a hero character to utilize in a game. You don't need to know anything about gaming or any particular game's terminologies in order to be served by this program. Just answer the questions, and we will take it from there!</p>
-            <p>When you take the quiz, we first determine which game you'd like to play.</p>
-            <p>Once we have your game choice, then we narrow down your character choices based on input from you. You can choose the #1 recommended hero, or choose one of the other available options.</p>
-            <p>Then, play your game, and have fun!</p>
-            
-        </section>
+    <div id='top'></div>
+    <section id="quiz">
+        <header>
+            <div class="slideStuff">
+                <div class= "slideWords">  
+                    <div class='item1'>
+                        <img src="./Images/HeroMatch-Logo.png">                         
+                    </div>
 
-        <section id="quiz">
-            <h2>Take the quiz</h2>
-            <button class= "quiz">Click here to begin quiz</button>
-            
-        </section>    
-        <section id= "nav">
-                <a href= #login><h3>Login</h3></a>                        
-                <a href= #about><h3>About</h3></a>
-                <a href= #quiz><h3>Take quiz</h3></a>                              
-        </section>    
+                    <span class="item2">Find Your Gaming Character</span>
 
-<div id= 'root'></div>
+                    <div class='item4'>
+                        <img src="./Images/HeroMatch-Logo.png">                         
+                    </div>
+
+                    <span class="item5">Find Your Gaming Character</span>
+
+                </div>          
+                <img class="item3" src="https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/full-portrait.png" alt="image of Reaper from Overwatch">
+                <img class="item6" src="./Images/volibear.png" alt="image of Volibear from League">
+                <img class="item8" src="https://d1u1mce87gyfbn.cloudfront.net/hero/dva/full-portrait.png" alt="image of D.Va from Overwatch">
+                <img class="item7" src="./Images/warwick.png" alt="image of Warwick from League">
+                 
+                <button class="quiz-button slider-button" id="body_quiz">Find Your Hero</button>  
+            </div>
+        </header>
+    </section>  
+    <div id="nav">
+    <nav>
+        <ul>
+            <li id = 'nav_home'>Home</li>
+            <li id= 'nav_games'>Games</li>
+            <li id = 'nav_quiz'>Find Your Hero</li>
+            <li id = 'nav_about'>About</li>
+        </ul>           
+    </nav>    
+</div>
+
+<div id= 'root'></div> 
+<script src="./js/app.js"></script>
 </body>
 </html>
